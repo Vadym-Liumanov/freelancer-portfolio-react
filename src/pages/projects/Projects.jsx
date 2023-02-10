@@ -6,9 +6,7 @@ const Projects = () => {
 
   const coupleOfProjects = projectsList.map((project) => {
     return (
-      <div key={project.id}>
-        <ProjectCard link={'#!'} imgSrc={project["img"]["small"]} title={project.title} />
-      </div>
+      <ProjectCard key={project.id} link={'#!'} imgSrc={project["img"]["small"]} title={project.title} />
     )
   })
 
