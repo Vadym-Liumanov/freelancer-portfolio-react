@@ -20,7 +20,7 @@ const Project = () => {
             <p>Skills: React, Node.js, MongoDB</p>
           </div>
 
-          <BtnGitHub />
+          <BtnGitHub link={"htpps:/github.com"} />
 
         </div>
       </div>
