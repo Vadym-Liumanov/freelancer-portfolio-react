@@ -38,6 +38,7 @@ const projectsList = [
     id: 4,
     title: 'Dating app',
     skills: 'React Native',
+    gitHubLink: null,
     img: {
       small: img04,
       big: imgBig04
@@ -47,8 +48,9 @@ const projectsList = [
     id: 5,
     title: 'Landing',
     skills: 'HTML, SCSS, JS',
+    gitHubLink: null,
     img: {
-      small: 5,
+      small: img05,
       big: imgBig05
     }
   },
@@ -56,8 +58,9 @@ const projectsList = [
     id: 6,
     title: 'Gaming community',
     skills: 'React, PHP, MySql',
+    gitHubLink: null,
     img: {
-      small: 6,
+      small: img06,
       big: imgBig06
     }
   }

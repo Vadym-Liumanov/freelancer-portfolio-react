@@ -2,15 +2,13 @@ import React from "react"
 
 import "./styles.css"
 
-import projectImage01 from "./../../img/projects/01.jpg"
-
-const ProjectCard = () => {
+const ProjectCard = ({ link, imgSrc, title }) => {
   return (
     <>
       <li className="project">
-        <a href="./project-page.html">
-          <img src={projectImage01} alt="Project img" className="project__img" />
-          <h3 className="project__title">Gaming streaming portal</h3>
+        <a href={link}>
+          <img src={imgSrc} alt="Project img" className="project__img" />
+          <h3 className="project__title">{title}</h3>
         </a>
       </li>
     </>
