@@ -1,6 +1,6 @@
 import React from "react"
 
-import { BrowserRouter, Routes, Route, ScrollRestoration } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import "./css/main.css"
 
@@ -11,11 +11,13 @@ import Projects from "./pages/projects/Projects"
 import Contacts from "./pages/contacts/Contacts"
 import Project from "./pages/project/Project"
 
+import ScrollToTop from "./utils/scrollToTop"
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <ScrollRestoration />
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
