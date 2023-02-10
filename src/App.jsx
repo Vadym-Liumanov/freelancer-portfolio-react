@@ -1,6 +1,6 @@
 import React from "react"
 
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, ScrollRestoration } from "react-router-dom"
 
 import "./css/main.css"
 
@@ -15,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollRestoration />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
