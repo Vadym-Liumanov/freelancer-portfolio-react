@@ -5,7 +5,7 @@ import {
 
 const projectsList = [
   {
-    id: 1,
+    id: '1',
     title: 'Gaming streaming portal',
     skills: 'React, Node.js, MongoDB',
     gitHubLink: 'https://github.com',
@@ -15,7 +15,7 @@ const projectsList = [
     }
   },
   {
-    id: 2,
+    id: '2',
     title: 'Video service',
     skills: 'React, PHP, MySql',
     gitHubLink: 'https://github.com',
@@ -25,7 +25,7 @@ const projectsList = [
     }
   },
   {
-    id: 3,
+    id: '3',
     title: 'Video portal',
     skills: 'Vue JS, Node.js, MongoDB',
     gitHubLink: 'https://github.com',
@@ -35,7 +35,7 @@ const projectsList = [
     }
   },
   {
-    id: 4,
+    id: '4',
     title: 'Dating app',
     skills: 'React Native',
     gitHubLink: null,
@@ -45,7 +45,7 @@ const projectsList = [
     }
   },
   {
-    id: 5,
+    id: '5',
     title: 'Landing',
     skills: 'HTML, SCSS, JS',
     gitHubLink: null,
@@ -55,7 +55,7 @@ const projectsList = [
     }
   },
   {
-    id: 6,
+    id: '6',
     title: 'Gaming community',
     skills: 'React, PHP, MySql',
     gitHubLink: null,

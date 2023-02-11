@@ -2,11 +2,11 @@ import React from "react"
 
 import "./styles.css"
 
-const Dump = () => {
+const Dumb = () => {
   return (
     <>
     </>
   )
 }
 
-export default Dump
+export default Dumb

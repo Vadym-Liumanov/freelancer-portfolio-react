@@ -1,23 +1,39 @@
 import React from "react"
+import { useParams } from "react-router-dom"
 
-import { imgBig02 } from "./../../img/projects"
+import NotFound from "../../components/notFound/NotFound"
 
 import BtnGitHub from "../../components/btnGitHub/BtnGitHub"
 
 import "./styles.css"
 
+import { projectsList } from "../../helpers/projectsList"
+
 const Project = () => {
+
+  const { id } = useParams()
+
+  const currentProject = projectsList.find(element => element.id === id)
+
+  if (!currentProject) {
+    return (
+      <>
+        <NotFound />
+      </>
+    )
+  }
+
   return (
     <main className="section">
       <div className="container">
         <div className="project-details">
 
-          <h1 className="title-1">Video service</h1>
+          <h1 className="title-1">{currentProject.title}</h1>
 
-          <img src={imgBig02} alt="" className="project-details__cover" />
+          <img src={currentProject['img']['big']} alt="" className="project-details__cover" />
 
           <div className="project-details__desc">
-            <p>Skills: React, Node.js, MongoDB</p>
+            <p>{currentProject['skills']}</p>
           </div>
 
           <BtnGitHub link={"htpps:/github.com"} />
