@@ -36,7 +36,7 @@ const Project = () => {
             <p>{currentProject['skills']}</p>
           </div>
 
-          <BtnGitHub link={"htpps:/github.com"} />
+          <BtnGitHub link={"htpps://github.com"} />
 
         </div>
       </div>
