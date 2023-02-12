@@ -1,4 +1,6 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useEffect, useRef } from "react"
+
+import { useLocalStorage } from "../../helpers/useLocalStorage"
 
 import "./styles.css"
 
@@ -6,7 +8,8 @@ import sun from "./sun.svg"
 import moon from "./moon.svg"
 
 const BtnDarkMode = () => {
-  const [mode, setMode] = useState('light')
+  // const [mode, setMode] = useState('light')
+  const [mode, setMode] = useLocalStorage('darkMode', 'light')
   const btnRef = useRef(null)
 
   const toggleDarkMode = () => {

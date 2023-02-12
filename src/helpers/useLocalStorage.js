@@ -1,19 +1,21 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from 'react'
 
-const getStorageValue = (key, defaultValue) => {
-  const savedValue = localStorage.getItem(key)
-  const initialValue = JSON.stringify(savedValue)
-  return initialValue || defaultValue
+function getStorageValue(key, defaultValue) {
+	// getting stored value
+	const saved = localStorage.getItem(key)
+	const initial = JSON.parse(saved)
+	return initial || defaultValue
 }
 
 export const useLocalStorage = (key, defaultValue) => {
-  const [mode, setMode] = useState(() => getStorageValue(key, defaultValue))
+	const [value, setValue] = useState(() => {
+		return getStorageValue(key, defaultValue)
+	})
 
-  useEffect(() => {
-    // storing input value
-    localStorage.setItem(key, JSON.stringify(mode))
-  }, [key, mode])
+	useEffect(() => {
+		// storing input name
+		localStorage.setItem(key, JSON.stringify(value));
+	}, [key, value])
 
-  return [mode, setMode]
+	return [value, setValue]
 }
-
