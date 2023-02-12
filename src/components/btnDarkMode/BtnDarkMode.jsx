@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react"
 
-import { useLocalStorage } from "../../helpers/useLocalStorage"
+import { useLocalStorage } from "../../utils/useLocalStorage"
 
 import "./styles.css"
 
