@@ -6,10 +6,14 @@ import "./styles.css"
 
 import sun from "./sun.svg"
 import moon from "./moon.svg"
+import detectDarkMode from "../../utils/detectDarkMode"
 
 const BtnDarkMode = () => {
   // const [mode, setMode] = useState('light')
-  const [mode, setMode] = useLocalStorage('darkMode', 'light')
+
+  const initialMode = detectDarkMode()
+
+  const [mode, setMode] = useLocalStorage('darkMode', initialMode)
   const btnRef = useRef(null)
 
   const toggleDarkMode = () => {
