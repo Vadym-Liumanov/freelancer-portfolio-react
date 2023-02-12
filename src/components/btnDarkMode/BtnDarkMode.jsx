@@ -11,9 +11,9 @@ import detectDarkMode from "../../utils/detectDarkMode"
 const BtnDarkMode = () => {
   // const [mode, setMode] = useState('light')
 
-  const initialMode = detectDarkMode()
+  const initialModeValue = detectDarkMode()
 
-  const [mode, setMode] = useLocalStorage('darkMode', initialMode)
+  const [mode, setMode] = useLocalStorage('darkMode', initialModeValue)
   const btnRef = useRef(null)
 
   const toggleDarkMode = () => {
@@ -29,6 +29,23 @@ const BtnDarkMode = () => {
       btnRef.current.classList.remove('dark-mode-btn--active')
     }
   }, [mode])
+
+  /* Этот useEffect будет выполнен единожды.
+  Он повесит прослушку на динамическое изменение темы в системе - как только 
+  в системе поменяется тема, она автоматически сменится в приложении 
+  
+  TODO
+  Убрать мусор в виде прослушки при анмаунте приложения 
+  */
+
+  useEffect(() => {
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (event) => {
+        const newColorScheme = event.matches ? "dark" : "light"
+        setMode(newColorScheme)
+      })
+  }, [setMode])
 
   return (
     <button className="dark-mode-btn" onClick={toggleDarkMode} ref={btnRef}>
