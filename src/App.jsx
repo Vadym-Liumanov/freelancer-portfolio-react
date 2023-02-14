@@ -1,6 +1,6 @@
 import React from "react"
 
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 
 import "./css/main.css"
 
@@ -17,7 +17,7 @@ import ScrollToTop from "./utils/scrollToTop"
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <Navbar />
         <Routes>
@@ -28,10 +28,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
-
-      {/* <script src="./js/main.js"></script> */}
-
+      </HashRouter>
     </div>
   )
 }
