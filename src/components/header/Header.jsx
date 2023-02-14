@@ -7,13 +7,13 @@ const Header = () => {
     <header className="header">
       <div className="header__wrapper">
         <h1 className="header__title">
-          <strong>Hi, my name is <em>Yuri</em></strong><br />
+          <strong>Hi, my name is <em>Vadim</em></strong><br />
           a frontend developer
         </h1>
         <div className="header__text">
-          <p>with passion for learning and creating.</p>
+          <p>programming is my hobby and work at the same time</p>
         </div>
-        <a href="#!" className="btn">Download CV</a>
+        <a href="#!" className="btn" style={{display: "none"}}>Download CV</a>
       </div>
     </header>
   )

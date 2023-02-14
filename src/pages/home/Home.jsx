@@ -1,26 +1,25 @@
 import React from "react"
 
 import Header from "../../components/header/Header"
+import SkillsCard from "../../components/skillsCard/SkillsCard"
+
+import { skillsList } from "../../helpers/skillsList"
 
 const Home = () => {
+
+  const skills = skillsList.map((skill) => {
+    return <SkillsCard key={skill.id} title={skill.title} description={skill.description} />
+  })
+
   return (
     <>
       <Header />
-      
+
       <main className="section">
         <div className="container">
-
           <ul className="content-list">
-            <li className="content-list__item">
-              <h2 className="title-2">Frontend</h2>
-              <p>JavaScript, TypeScript, ReactJS, Angular, Redux, HTML, CSS, NPM, BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents</p>
-            </li>
-            <li className="content-list__item">
-              <h2 className="title-2">Backend</h2>
-              <p>NodeJS, MySQL, MongoDB, PHP, Laravel</p>
-            </li>
+            {skills}
           </ul>
-
         </div>
       </main>
     </>
