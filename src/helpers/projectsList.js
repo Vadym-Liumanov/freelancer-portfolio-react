@@ -1,12 +1,12 @@
 import {
-  img01, img02, img03, img04, img05, img06,
-  imgBig01, imgBig02, imgBig03, imgBig04, imgBig05, imgBig06
+  img01 ,img02, img03, img04, img05, img06, /* img07, */
+  imgBig01, imgBig02, imgBig03, imgBig04, imgBig05, imgBig06, /* imgBig07 */
 } from "../img/projects"
 
 const projectsList = [
   {
     id: '1',
-    title: 'Gaming streaming portal',
+    title: 'Freelancer portfolio',
     skills: 'React, Node.js, MongoDB',
     gitHubLink: 'https://github.com',
     img: {
@@ -63,7 +63,18 @@ const projectsList = [
       small: img06,
       big: imgBig06
     }
-  }
+  },
+  // {
+  //   id: '7',
+  //   title: 'Gaming streaming portal',
+  //   skills: 'React, Node.js, MongoDB',
+  //   gitHubLink: 'https://github.com',
+  //   img: {
+  //     small: img07,
+  //     big: imgBig07
+  //   }
+  // }
+  
 ]
 
 export { projectsList }
