@@ -8,7 +8,7 @@ import "./styles.css"
 // import { gitHub, instagram, linkedIn, twitter, vk } from "../../img/icons"
 
 const Footer = () => {
-  const copyrightText = '© 2022 vliumanov'
+  const copyrightText = '© 2022 vvliumanov'
 
   const socials = socialList.map((item) => {
     return <SocialCard key={item.id} link={item.link} icon={item.icon} />

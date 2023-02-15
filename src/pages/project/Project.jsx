@@ -27,17 +27,12 @@ const Project = () => {
     <main className="section">
       <div className="container">
         <div className="project-details">
-
           <h1 className="title-1">{currentProject.title}</h1>
-
           <img src={currentProject['img']['big']} alt="" className="project-details__cover" />
-
           <div className="project-details__desc">
             <p>{currentProject['skills']}</p>
           </div>
-
-          <BtnGitHub link={"htpps://github.com"} />
-
+          <BtnGitHub link={currentProject['gitHubLink']} />
         </div>
       </div>
     </main>

@@ -4,9 +4,12 @@ import "./styles.css"
 
 const NotFound = () => {
   return (
-    <>
-      <h1>404 not found</h1>
-    </>
+    <div className="container">
+      <div className="notFound__wrapper">
+        <div className="notFound__title">404</div>
+        <div className="notFound__text">Not Found</div>
+      </div>
+    </div>
   )
 }
 

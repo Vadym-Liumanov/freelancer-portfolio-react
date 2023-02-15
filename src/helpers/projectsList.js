@@ -7,8 +7,8 @@ const projectsList = [
   {
     id: '1',
     title: 'Freelancer portfolio',
-    skills: 'React, Node.js, MongoDB',
-    gitHubLink: 'https://github.com',
+    skills: 'ReactJS, HTML, CSS',
+    gitHubLink: 'https://github.com/Vadym-Liumanov/freelancer-portfolio-react',
     img: {
       small: img01,
       big: imgBig01
