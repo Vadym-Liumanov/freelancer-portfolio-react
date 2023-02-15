@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/freelancer-portfolio-react/static/css/main.43adaf67.css",
+    "main.css": "/freelancer-portfolio-react/static/css/main.d821f20f.css",
     "main.js": "/freelancer-portfolio-react/static/js/main.956fcbd2.js",
     "static/js/787.ba44eac3.chunk.js": "/freelancer-portfolio-react/static/js/787.ba44eac3.chunk.js",
     "static/media/04-big.jpg": "/freelancer-portfolio-react/static/media/04-big.9dc8caf822c4a4116af4.jpg",
@@ -27,12 +27,12 @@
     "static/media/twitter.svg": "/freelancer-portfolio-react/static/media/twitter.d4b0a40866d7b735834b96db6728afc1.svg",
     "static/media/linkedIn.svg": "/freelancer-portfolio-react/static/media/linkedIn.c05a2ae5b158581b0f27510e1d79e379.svg",
     "index.html": "/freelancer-portfolio-react/index.html",
-    "main.43adaf67.css.map": "/freelancer-portfolio-react/static/css/main.43adaf67.css.map",
+    "main.d821f20f.css.map": "/freelancer-portfolio-react/static/css/main.d821f20f.css.map",
     "main.956fcbd2.js.map": "/freelancer-portfolio-react/static/js/main.956fcbd2.js.map",
     "787.ba44eac3.chunk.js.map": "/freelancer-portfolio-react/static/js/787.ba44eac3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43adaf67.css",
+    "static/css/main.d821f20f.css",
     "static/js/main.956fcbd2.js"
   ]
 }
