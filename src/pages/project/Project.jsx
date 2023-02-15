@@ -1,7 +1,7 @@
 import React from "react"
 import { useParams } from "react-router-dom"
 
-import NotFound from "../../components/notFound/NotFound"
+import NotFound from "../notFound/NotFound"
 
 import BtnGitHub from "../../components/btnGitHub/BtnGitHub"
 

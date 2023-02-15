@@ -10,7 +10,7 @@ import Footer from "./components/footer/Footer"
 import Projects from "./pages/projects/Projects"
 import Contacts from "./pages/contacts/Contacts"
 import Project from "./pages/project/Project"
-import NotFound from "./components/notFound/NotFound"
+import NotFound from "./pages/notFound/NotFound"
 
 import ScrollToTop from "./utils/scrollToTop"
 
