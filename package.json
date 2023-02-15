@@ -1,7 +1,7 @@
 {
   "name": "freelancer-portfolio-react",
   "version": "0.1.0",
-  "homepage": "https://vadym-liumanov.github.io/freelancer-portfolio-react",
+  "homepage": "https://vadym-liumanov.github.io/freelancer-portfolio-react/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
