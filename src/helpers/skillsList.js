@@ -1,13 +1,13 @@
 const skillsList = [
   {
     id: '10',
-    title: 'JS scills',
-    description: 'JavaScript, TypeScript, ReactJS, Redux, REST API, JSON, HTML, CSS, SCSS, TailwindCSS, AntDesign'
+    title: 'JS skills',
+    description: 'JavaScript, TypeScript, ReactJS, Redux, REST API'
   },
   {
     id: '20',
     title: 'Layout',
-    description: 'HTML, CSS, SCSS, TailwindCSS, AntDesign, adaptive design, Figma'
+    description: 'HTML, CSS, SCSS, TailwindCSS, AntDesign, adaptive design'
   },
   {
     id: '30',
