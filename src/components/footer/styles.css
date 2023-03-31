@@ -14,10 +14,20 @@
 	row-gap: 27px;
 }
 
+/* Socials */
+
 .social {
 	display: flex;
 	column-gap: 30px;
 	align-items: center;
+}
+
+.social__item {
+	width: 40px;
+}
+
+.social__icon {
+	width: 40px;
 }
 
 .copyright {
