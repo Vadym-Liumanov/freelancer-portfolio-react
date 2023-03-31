@@ -5,8 +5,6 @@ import { socialList } from "../../helpers/socialList"
 
 import "./styles.css"
 
-// import { gitHub, instagram, linkedIn, twitter, vk } from "../../img/icons"
-
 const Footer = () => {
   const copyrightText = '© 2022 vvliumanov'
 

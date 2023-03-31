@@ -1,9 +1,4 @@
 import { gitHub, linkedIn, telegram, whatsapp } from "../img/icons"
-// import { gitHub, linkedIn, twitter, vk, instagram} from "../img/icons"
-
-// TODO: расположить иконки в порядке
-// линкед, гит, телеграм, ватсап
-// размеры иконки 40х40
 
 const socialList = [
   {
