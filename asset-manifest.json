@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/freelancer-portfolio-react/static/css/main.43cc6955.css",
+    "main.js": "/freelancer-portfolio-react/static/js/main.71e2a577.js",
+    "static/media/08-big.jpg": "/freelancer-portfolio-react/static/media/08-big.36ceebabfa72a53496f4.jpg",
+    "static/media/09-big.jpg": "/freelancer-portfolio-react/static/media/09-big.58befc1b0c280dbf63c7.jpg",
+    "static/media/01-big.jpg": "/freelancer-portfolio-react/static/media/01-big.b7bf9eb2c8cd86ab699c.jpg",
+    "static/media/01.jpg": "/freelancer-portfolio-react/static/media/01.7ed5810b6719a9a7bd78.jpg",
+    "static/media/09.jpg": "/freelancer-portfolio-react/static/media/09.d177df29a5fbcea1e623.jpg",
+    "static/media/08.jpg": "/freelancer-portfolio-react/static/media/08.79c266ba02137feb1926.jpg",
+    "static/media/header-bg.png": "/freelancer-portfolio-react/static/media/header-bg.5bf82a058f892ab7f237.png",
+    "static/media/sun.svg": "/freelancer-portfolio-react/static/media/sun.f8606845ee97bee21c3bc95b2dec3866.svg",
+    "static/media/moon.svg": "/freelancer-portfolio-react/static/media/moon.312bed9230c94183d589bcc499993093.svg",
+    "static/media/gitHub.svg": "/freelancer-portfolio-react/static/media/gitHub.a5541850a2a6843f34467a91657cc39d.svg",
+    "static/media/gitHub-black.svg": "/freelancer-portfolio-react/static/media/gitHub-black.879a08487a26f06ac21248a96c866696.svg",
+    "static/media/whatsapp.svg": "/freelancer-portfolio-react/static/media/whatsapp.27334c92396fce2364d9d49a69c8c32f.svg",
+    "static/media/instagram.svg": "/freelancer-portfolio-react/static/media/instagram.6b0ce32a930db2eac1c21600458a8cd0.svg",
+    "static/media/vk.svg": "/freelancer-portfolio-react/static/media/vk.92c39b2c917df4fd4643503dd57a49bf.svg",
+    "static/media/twitter.svg": "/freelancer-portfolio-react/static/media/twitter.9ca7b7d7634476270a563192e3f69250.svg",
+    "static/media/linkedIn.svg": "/freelancer-portfolio-react/static/media/linkedIn.55523f62797ddb51e960322dd47e5636.svg",
+    "static/media/telegram.svg": "/freelancer-portfolio-react/static/media/telegram.655f483614311fac1b0e096f794e8112.svg",
+    "index.html": "/freelancer-portfolio-react/index.html",
+    "main.43cc6955.css.map": "/freelancer-portfolio-react/static/css/main.43cc6955.css.map",
+    "main.71e2a577.js.map": "/freelancer-portfolio-react/static/js/main.71e2a577.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43cc6955.css",
+    "static/js/main.71e2a577.js"
+  ]
+}
