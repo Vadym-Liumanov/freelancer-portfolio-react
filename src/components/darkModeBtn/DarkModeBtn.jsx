@@ -9,7 +9,7 @@ import sun from "./sun.svg"
 import moon from "./moon.svg"
 import detectDarkMode from "../../utils/detectDarkMode"
 
-const BtnDarkMode = () => {
+const DarkModeBtn = () => {
   // Запишем в переменную значение темы в Windows (если таковое имеется)
   const initialModeValue = detectDarkMode()
   // Зададим значение темы в состоянии компонента
@@ -39,12 +39,12 @@ const BtnDarkMode = () => {
   !Переделать анмаунт - надо ф-цию обработчика события выносить
   */
 
-  const onChangeColorSchemeHandler = (event) => {
-    const newColorScheme = event.matches ? "dark" : "light"
-    setMode(newColorScheme)
-  }
-
   useEffect(() => {
+    const onChangeColorSchemeHandler = (event) => {
+      const newColorScheme = event.matches ? "dark" : "light"
+      setMode(newColorScheme)
+    }
+
     window
       .matchMedia("(prefers-color-scheme: dark)")
       .addEventListener("change", onChangeColorSchemeHandler)
@@ -52,7 +52,9 @@ const BtnDarkMode = () => {
     return window
       .matchMedia("(prefers-color-scheme: dark)")
       .removeEventListener("change", onChangeColorSchemeHandler)
-  }, [setMode])
+    // Чтобы не ругался линтер на пустой массив зависимостей (тут не нужен), отключим его для след. строки
+    // eslint-disable-next-line
+  }, [])
 
   const normalStyle = "dark-mode-btn"
   const activeStyle = "dark-mode-btn dark-mode-btn_active"
@@ -65,4 +67,4 @@ const BtnDarkMode = () => {
   )
 }
 
-export default BtnDarkMode
+export default DarkModeBtn

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 import "./styles.css"
 
-import BtnDarkMode from "../btnDarkMode/BtnDarkMode"
+import DarkModeBtn from "../darkModeBtn/DarkModeBtn"
 
 const Header = () => {
 
@@ -45,7 +45,7 @@ const Header = () => {
           </nav>
 
           <div className="header__btn">
-            <BtnDarkMode />
+            <DarkModeBtn />
           </div>
 
         </div>

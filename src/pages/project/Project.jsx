@@ -2,19 +2,18 @@ import React from "react"
 import { useParams } from "react-router-dom"
 
 import NotFound from "../notFound/NotFound"
-
-import BtnGitHub from "../../components/btnGitHub/BtnGitHub"
+import GitHubBtn from "../../components/gitHubBtn/GitHubBtn"
 
 import "./styles.css"
-
 import { projectsList } from "../../helpers/projectsList"
 
 const Project = () => {
-
+  // Берем из параметров URL id запрашиваемого проекта
   const { id } = useParams()
-
+  // Смотрим, есть ли в массиве проектов проект с текущим id
   const currentProject = projectsList.find(element => element.id === id)
 
+  // Если такого проекта нет - покажем 404
   if (!currentProject) {
     return (
       <>
@@ -22,7 +21,7 @@ const Project = () => {
       </>
     )
   }
-
+  // Если есть - выводим страничку проекта
   return (
     <main className="section">
       <div className="container">
@@ -32,7 +31,7 @@ const Project = () => {
           <div className="project-details__desc">
             <p>{currentProject['skills']}</p>
           </div>
-          <BtnGitHub link={currentProject['gitHubLink']} />
+          <GitHubBtn link={currentProject['gitHubLink']} />
         </div>
       </div>
     </main>
