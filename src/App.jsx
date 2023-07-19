@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 import { HashRouter, Routes, Route } from "react-router-dom"
 
@@ -13,8 +13,16 @@ import Project from "./pages/project/Project"
 import NotFound from "./pages/notFound/NotFound"
 
 import ScrollToTop from "./utils/scrollToTop"
+import Modal from "./components/modal/Modal"
 
 function App() {
+  // Состояние видимости модального окна. Все это потом перенесем в компонент Header, где будет кнопка бургер-меню
+  const [isModal, setIsModal] = useState(true)
+  // ф-ция закрытия модального окна
+  const onClose = () => {
+    setIsModal(false)
+  }
+
   return (
     <div className="App">
       <HashRouter>
@@ -27,6 +35,10 @@ function App() {
           <Route exact path="/contacts" element={<Contacts />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        {/* Реализовали через portal. Теперь вне зависимости от положения в DOM, Modal будет припортален к #root(наши настройки) элементу */}
+        <Modal active={isModal} onClose={onClose}>
+          Модальное окно
+        </Modal>
         <Footer />
       </HashRouter>
     </div>
