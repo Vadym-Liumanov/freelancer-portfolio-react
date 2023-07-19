@@ -1,4 +1,4 @@
-const skillsList = [
+export const skillsList = [
   {
     id: '10',
     title: 'JS skills',
@@ -25,5 +25,3 @@ const skillsList = [
   //   description: 'NodeJS, MySQL, MongoDB'
   // }
 ]
-
-export { skillsList }

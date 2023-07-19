@@ -1,6 +1,6 @@
 import React from "react"
 
-import Header from "../../components/header/Header"
+import HeadBlock from "../../components/HeadBlock/HeadBlock"
 import SkillsCard from "../../components/skillsCard/SkillsCard"
 
 import { skillsList } from "../../helpers/skillsList"
@@ -13,8 +13,7 @@ const Home = () => {
 
   return (
     <>
-      <Header />
-
+      <HeadBlock />
       <main className="section">
         <div className="container">
           <ul className="content-list">

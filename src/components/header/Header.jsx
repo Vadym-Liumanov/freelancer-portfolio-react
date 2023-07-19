@@ -1,19 +1,55 @@
 import React from "react"
+import { NavLink } from "react-router-dom"
 
 import "./styles.css"
 
+import BtnDarkMode from "../btnDarkMode/BtnDarkMode"
+
 const Header = () => {
+
+  const activeLink = "nav__link nav__link_active"
+  const normalLink = "nav__link"
+
+  const linkClassNameDefinition = ({ isActive }) => isActive ? activeLink : normalLink
+
   return (
     <header className="header">
-      <div className="header__wrapper">
-        <h1 className="header__title">
-          <strong>Hi, my name is <em>Vadym</em></strong><br />
-          a frontend developer
-        </h1>
-        <div className="header__text">
-          <p>programming is my hobby and work at the same time</p>
+      <div className="container">
+
+        <div className="header__row">
+
+          <div className="header__logo">
+            <NavLink to="/" className="logo">
+              <strong>Freelancer</strong> portfolio
+            </NavLink>
+          </div>
+
+          <nav className="header__nav nav">
+            <ul className="nav__list">
+              <li className="nav__item">
+                <NavLink to="/" className={linkClassNameDefinition}>
+                  Home
+                </NavLink>
+              </li>
+              <li className="nav-list__item">
+                <NavLink to="/projects" className={linkClassNameDefinition}>
+                  Projects
+                </NavLink>
+              </li>
+              <li className="nav-list__item">
+                <NavLink to="/contacts" className={linkClassNameDefinition}>
+                  Contacts
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+
+          <div className="header__btn">
+            <BtnDarkMode />
+          </div>
+
         </div>
-        <a href="#!" className="btn" style={{display: "none"}}>Download CV</a>
+
       </div>
     </header>
   )
