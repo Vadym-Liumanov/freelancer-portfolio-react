@@ -5,7 +5,7 @@ import "./styles.css"
 
 import DarkModeBtn from "../darkModeBtn/DarkModeBtn"
 
-const Header = () => {
+const Header = (props) => {
 
   const activeLink = "nav__link nav__link_active"
   const normalLink = "nav__link"
@@ -18,12 +18,14 @@ const Header = () => {
 
         <div className="header__row">
 
-          <div className="header__logo">
-            <NavLink to="/" className="logo">
+          {/* Logo */}
+          <div className="header__logo logo">
+            <NavLink to="/" className="logo__link">
               <strong>Freelancer</strong> portfolio
             </NavLink>
           </div>
 
+          {/* Navbar */}
           <nav className="header__nav nav">
             <ul className="nav__list">
               <li className="nav__item">
@@ -44,6 +46,12 @@ const Header = () => {
             </ul>
           </nav>
 
+          {/* Burger menu */}
+          <button className="header__burger burger" onClick={props.onOpen}>  
+            Бургер
+          </button>
+
+          {/* Dark-mode button */}
           <div className="header__btn">
             <DarkModeBtn />
           </div>

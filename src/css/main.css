@@ -57,6 +57,10 @@ body {
 	color: var(--text-color);
 }
 
+body._blocked {
+	overflow-y: hidden;
+}
+
 #root {
 	min-height: 100vh;
 }
@@ -80,7 +84,8 @@ body {
 }
 
 .section {
-	padding: 70px 0;
+	/* Компенсируем 100px на высоту fixed header */
+	padding: calc(70px + 100px) 0;
 }
 
 .title-1 {

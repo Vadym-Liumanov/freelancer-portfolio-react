@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from 'react-dom';
 /* Компонент модального окна. В теле окна будет выводить {children}. 
 В данном проекте будем использовать для вывода меню бургер.
@@ -8,6 +8,19 @@ import ReactDOM from 'react-dom';
 import './styles.css'
 
 const Modal = ({ active, onClose, children }) => {
+  /* через useEffect будем обращаться к элементу body для блокировки скроллинга при открытом модальном окне
+  путем добавления класса "_blocked". Будет синхронизировано со значением открытого модального окна "active"
+  */
+
+  useEffect(() => {
+    const bodyElement = document.body
+    if (active) {
+      bodyElement.classList.add('_blocked')
+    } else {
+      bodyElement.classList.remove('_blocked')
+    }
+  }, [active])
+  
   if (!active) {
     return null
   }

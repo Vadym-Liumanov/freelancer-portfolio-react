@@ -17,17 +17,20 @@ import Modal from "./components/modal/Modal"
 
 function App() {
   // Состояние видимости модального окна. Все это потом перенесем в компонент Header, где будет кнопка бургер-меню
-  const [isModal, setIsModal] = useState(true)
+  const [isModal, setIsModal] = useState(false)
   // ф-ция закрытия модального окна
   const onClose = () => {
     setIsModal(false)
+  }
+  const onOpen = () => {
+    setIsModal(true)
   }
 
   return (
     <div className="App">
       <HashRouter>
         <ScrollToTop />
-        <Header />
+        <Header onOpen={onOpen} />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/projects" element={<Projects />} />

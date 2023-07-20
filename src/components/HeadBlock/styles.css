@@ -1,6 +1,7 @@
 /* HeadBlock */
 
 .head-block {
+	margin-top: 100px;
 	padding: 40px 0;
 	min-height: calc(100vh - 76px);
 
