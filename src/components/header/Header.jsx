@@ -1,22 +1,36 @@
-import React from "react"
+import React, { useState } from "react"
 import { NavLink } from "react-router-dom"
 
 import "./styles.css"
 
 import DarkModeBtn from "../darkModeBtn/DarkModeBtn"
+// import BurgerBtn from "../burgerBtn/BurgerBtn"
 
 const Header = (props) => {
-
   const activeLink = "nav__link nav__link_active"
   const normalLink = "nav__link"
 
   const linkClassNameDefinition = ({ isActive }) => isActive ? activeLink : normalLink
+
+  const [isBurgerOpen, setIsBurgerOpen] = useState(false)
+  const burgerStyle = isBurgerOpen ? 'burger burger_active' : 'burger'
+
+  const onBurgerClick = () => {
+    setIsBurgerOpen((prev) => !prev)
+  }
 
   return (
     <header className="header">
       <div className="container">
 
         <div className="header__row">
+
+          {/* Burger menu */}
+          <div className="header__burger-btn">
+            <button className={burgerStyle} onClick={onBurgerClick}>
+              <span></span>
+            </button>
+          </div>
 
           {/* Logo */}
           <div className="header__logo logo">
@@ -46,13 +60,8 @@ const Header = (props) => {
             </ul>
           </nav>
 
-          {/* Burger menu */}
-          <button className="header__burger burger" onClick={props.onOpen}>  
-            Бургер
-          </button>
-
           {/* Dark-mode button */}
-          <div className="header__btn">
+          <div className="header__theme-btn">
             <DarkModeBtn />
           </div>
 

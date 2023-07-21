@@ -39,11 +39,12 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         {/* Реализовали через portal. Теперь вне зависимости от положения в DOM, Modal будет припортален к #root(наши настройки) элементу */}
+        <Footer />
         <Modal active={isModal} onClose={onClose}>
           Модальное окно
         </Modal>
-        <Footer />
       </HashRouter>
+
     </div>
   )
 }

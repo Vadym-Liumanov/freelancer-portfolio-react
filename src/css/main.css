@@ -75,8 +75,14 @@ body._blocked {
 
 .container {
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 30px;
 	max-width: 1200px;
+}
+
+@media (max-width: 767px) {
+	.container {
+		padding: 0 15px;
+	}
 }
 
 .none {
