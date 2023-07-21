@@ -14,13 +14,12 @@ const Home = () => {
   return (
     <>
       <HeadBlock />
-      <main className="section">
-        <div className="container">
-          <ul className="content-list">
+      
+      <section className="skills">
+          <ul className="skills__list">
             {skills}
           </ul>
-        </div>
-      </main>
+      </section>
     </>
   )
 }

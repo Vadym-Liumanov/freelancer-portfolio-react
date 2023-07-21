@@ -15,8 +15,8 @@
 	--nav-text: var(--white);
 
 	/* Header */
-	--header-bg: var(--black);
-	--header-text: var(--white);
+	--head-bg: var(--black);
+	--head-text: var(--white);
 
 	/* Footer */
 	--footer-bg: var(--black);
@@ -89,9 +89,9 @@ body._blocked {
 	display: none !important;
 }
 
-.section {
-	/* Компенсируем 100px на высоту fixed header */
-	padding: calc(70px + 100px) 0;
+.main {
+	/* компенсируем высоту fixed header в 76px */
+	margin-top: 76px;
 }
 
 .title-1 {
@@ -112,6 +112,8 @@ body._blocked {
 	line-height: 1.3;
 }
 
+
+
 /* Projects  */
 
 .projects {
@@ -122,28 +124,31 @@ body._blocked {
 	row-gap: 30px;
 }
 
-/* Content list */
+/* Skills list */
 
-.content-list {
-	margin: 0 auto;
+.skills__list {
 	max-width: 570px;
+	margin: 0 auto;
+	padding: 40px 0;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	row-gap: 40px;
+
 	text-align: center;
 }
 
-.content-list a {
+.skills__list a {
 	color: var(--accent);
 }
 
-.content-list__item {
+.skills__item {
 	font-size: 20px;
 	line-height: 1.5;
 }
 
-.content-list__item p + p {
+.skills__item p + p {
 	margin-top: 0.5em;
 }
 
@@ -202,13 +207,13 @@ body._blocked {
 		font-size: 22px;
 	}
 
-	/* Content List */
+	/* Slills list */
 
-	.content-list {
+	.skills__list {
 		row-gap: 20px;
 	}
 
-	.content-list__item {
+	.skills__item {
 		font-size: 16px;
 	}
 

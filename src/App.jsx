@@ -31,15 +31,17 @@ function App() {
       <HashRouter>
         <ScrollToTop />
         <Header onOpen={onOpen} />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/projects" element={<Projects />} />
-          <Route exact path="/projects/:id" element={<Project />} />
-          <Route exact path="/contacts" element={<Contacts />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        {/* Реализовали через portal. Теперь вне зависимости от положения в DOM, Modal будет припортален к #root(наши настройки) элементу */}
+        <main className="main">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/projects" element={<Projects />} />
+            <Route exact path="/projects/:id" element={<Project />} />
+            <Route exact path="/contacts" element={<Contacts />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
         <Footer />
+        {/* Реализовали через portal. Теперь вне зависимости от положения в DOM, Modal будет припортален к #root(наши настройки) элементу */}
         <Modal active={isModal} onClose={onClose}>
           Модальное окно
         </Modal>

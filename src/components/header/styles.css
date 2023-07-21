@@ -4,15 +4,17 @@ Header имеет position fixed - надо учесть при отступах
 Header полностью адаптирован
 */
 .header {
+	position: fixed;
+
 	color: var(--nav-text);
 	letter-spacing: normal;
-	padding: 20px 0;
 	background-color: var(--nav-bg);
 	border-bottom: 1px solid var(--nav-border);
-	position: fixed;
-	width: 100%;
+
 	/* высота в 1 ряд вместе с бордером */
 	height: 76px;
+	width: 100%;
+	padding: 20px 0;
 }
 
 .header__row {
@@ -57,7 +59,6 @@ Header полностью адаптирован
 		line-height: 1;
 	}
 }
-
 
 .logo__link strong {
 	font-weight: 700;

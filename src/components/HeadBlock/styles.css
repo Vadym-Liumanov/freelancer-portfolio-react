@@ -1,7 +1,6 @@
 /* HeadBlock */
 
 .head-block {
-	margin-top: 100px;
 	padding: 40px 0;
 	min-height: calc(100vh - 76px);
 
@@ -9,16 +8,16 @@
 	justify-content: center;
 	align-items: center;
 
-	background-color: var(--header-bg);
-	background-image: url('./../../img/header-bg.png');
+	background-color: var(--head-bg);
+	background-image: url('./../../img/head-bg.png');
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: center bottom;
+	background-position: center center;
 
-	color: var(--header-text);
-	text-align: center;
+	color: var(--head-text);
 }
 
+/* Ограничивает текст с рисунком, чтобы был посредине */
 .head-block__wrapper {
 	padding: 0 15px;
 	max-width: 660px;
@@ -29,6 +28,7 @@
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 1.4;
+	text-align: center;
 }
 
 .head-block__title strong {
@@ -44,14 +44,17 @@
 .head-block__text {
 	margin-bottom: 40px;
 	font-size: 20px;
-	line-height: 2;
+	line-height: 1.4;
+	text-align: center;
 }
 
+/* Если вдруг надо будет добавить абзацы - предусмотрим отступ */
 .head-block__text p + p {
-	margin-top: 0.5 em;
+	margin-top:  0.5em;
 }
 
 /* Btn */
+/* Кнопка для скачивания CV - пока отключена в JSX */
 
 .head-block__btn {
 	display: inline-block;

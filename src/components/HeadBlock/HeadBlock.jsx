@@ -4,7 +4,7 @@ import "./styles.css"
 
 const HeadBlock = () => {
   return (
-    <header className="head-block">
+    <section className="head-block">
       <div className="head-block__wrapper">
         <h1 className="head-block__title">
           <strong>Hi, my name is <em>Vadym</em></strong><br />
@@ -15,7 +15,7 @@ const HeadBlock = () => {
         </div>
         <a href="#!" target="_blank" className="head-block__btn" style={{ display: "none" }}>Download CV</a>
       </div>
-    </header>
+    </section>
   )
 }
 
