@@ -1,11 +1,13 @@
-/* HeadBlock */
+/* Head-block */
 
 .head-block {
-	padding: 40px 0;
+	padding: 40px 40px 60px;
+	/* для больших экранов ≥768px делаем длину в 100vh с учетом места на header */
 	min-height: calc(100vh - 76px);
 
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-around;
 	align-items: center;
 
 	background-color: var(--head-bg);
@@ -17,40 +19,72 @@
 	color: var(--head-text);
 }
 
-/* Ограничивает текст с рисунком, чтобы был посредине */
-.head-block__wrapper {
-	padding: 0 15px;
-	max-width: 660px;
+@media (max-width: 576px) {
+	.head-block {
+		min-height: 80vh;
+		padding: 40px 20px;
+	}
 }
 
 .head-block__title {
-	margin-bottom: 30px;
-	font-size: 40px;
-	font-weight: 700;
-	line-height: 1.4;
 	text-align: center;
+	line-height: 1.2;
 }
 
-.head-block__title strong {
-	font-size: 60px;
+.head-block__header {
+	font-size: 4.2em;
 	font-weight: 700;
 }
 
-.head-block__title em {
+.head-block__header em {
 	font-style: normal;
 	color: var(--accent);
 }
 
+.head-block__subheader {
+	margin-top: 0.4em;
+	font-size: 2.8em;
+	font-weight: 500;
+}
+
 .head-block__text {
-	margin-bottom: 40px;
-	font-size: 20px;
-	line-height: 1.4;
+	font-size: 1.6em;
 	text-align: center;
 }
 
 /* Если вдруг надо будет добавить абзацы - предусмотрим отступ */
-.head-block__text p + p {
-	margin-top:  0.5em;
+.head-block__text p+p {
+	margin-top: 0.5em;
+}
+
+@media (max-width: 767px) {
+	.head-block__header {
+		font-size: 3em;
+	}
+
+	.head-block__subheader {
+		margin-top: 0.4em;
+		font-size: 2.1em;
+	}
+
+	.head-block__text {
+		font-size: 1.3em;
+	}
+}
+
+@media (max-width: 576px) {
+	.head-block__header {
+		font-size: 2.25em;
+	}
+
+	.head-block__subheader {
+		margin-top: 0.4em;
+		font-size: 1.6em;
+	}
+
+	.head-block__text {
+		font-size: 1.2em;
+	}
 }
 
 /* Btn */

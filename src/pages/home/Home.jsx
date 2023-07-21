@@ -13,13 +13,13 @@ const Home = () => {
 
   return (
     <>
-      {/* <HeadBlock />
+      <HeadBlock />
       
       <section className="skills">
           <ul className="skills__list">
             {skills}
           </ul>
-      </section> */}
+      </section>
     </>
   )
 }
