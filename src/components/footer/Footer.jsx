@@ -16,10 +16,10 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer__wrapper">
-          <ul className="social">
+          <ul className="footer__social social">
             {socials}
           </ul>
-          <div className="copyright">
+          <div className="footer__copyright copyright">
             <p>{copyrightText}</p>
           </div>
         </div>

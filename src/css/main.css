@@ -67,6 +67,7 @@ body._blocked {
 
 .App {
 	min-height: 100vh;
+	/* Делаем так, чтобы футер при малом main всегда выравнивался по низу экрана */
 	display: flex;
 	flex-direction: column;
 }
