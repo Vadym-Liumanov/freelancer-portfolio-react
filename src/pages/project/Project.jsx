@@ -23,18 +23,18 @@ const Project = () => {
   }
   // Если есть - выводим страничку проекта
   return (
-    <main className="section">
+    <section className="project">
       <div className="container">
-        <div className="project-details">
-          <h1 className="title-1">{currentProject.title}</h1>
-          <img src={currentProject['img']['big']} alt="" className="project-details__cover" />
-          <div className="project-details__desc">
+        <div className="project__wrapper">
+          <h1 className="project__title title-1">{currentProject.title}</h1>
+          <img src={currentProject['img']['big']} alt="" className="project__img" />
+          <div className="project__description">
             <p>{currentProject['skills']}</p>
           </div>
           <GitHubBtn link={currentProject['gitHubLink']} />
         </div>
       </div>
-    </main>
+    </section>
   )
 }
 
