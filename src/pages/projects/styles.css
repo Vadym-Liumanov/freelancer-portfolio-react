@@ -1,0 +1,13 @@
+/* Projects  */
+
+.projects {
+	padding: 1em 0 2em;
+}
+
+.projects__list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	column-gap: 30px;
+	row-gap: 30px;
+}

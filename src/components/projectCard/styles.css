@@ -1,14 +1,22 @@
 /* Project card */
+/*
+<li className="projects__item project">
+<NavLink to={link} alt="Project img" className="project__link">
+	<img src={imgSrc} alt="Project img" className="project__img" />
+	<h3 className="project__title">{title}</h3>
+</NavLink>
+</li>
+*/
 
 .project {
-	max-width: 370px;
+	max-width: 360px;
 	background-color: var(--project-card-bg);
 	box-shadow: var(--box-shadow);
 	border-radius: 10px;
 }
 
 .project__img {
-	border-radius: 10px;
+	border-radius: 10px 10px 0 0;
 }
 
 .project__title {

@@ -3,8 +3,8 @@
 .footer {
 	/* Выравнивает футер во флекс-контейнере по низу экрана */
 	margin-top: auto;
-	/* фиксированная высота 90px */
-	height: 90px;
+	/* фиксированная высота 100px */
+	height: 100px;
 
 	background-color: var(--footer-bg);
 	color: var(--footer-text);

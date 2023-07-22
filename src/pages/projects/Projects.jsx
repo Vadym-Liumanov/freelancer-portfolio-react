@@ -1,6 +1,9 @@
 import React from "react"
+
 import ProjectCard from "../../components/projectCard/ProjectCard"
 import { projectsList } from './../../helpers/projectsList'
+
+import './styles.css'
 
 const Projects = () => {
 
@@ -16,14 +19,14 @@ const Projects = () => {
   })
 
   return (
-    <main className="section">
+    <section className="projects">
       <div className="container">
-        <h2 className="title-1">Projects</h2>
-        <ul className="projects">
+        <h2 className="projects__title title-1">Projects</h2>
+        <ul className="projects__list">
           {coupleOfProjects}
         </ul>
       </div>
-    </main>
+    </section>
   )
 }
 
