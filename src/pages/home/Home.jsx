@@ -4,6 +4,7 @@ import HeadBlock from "../../components/HeadBlock/HeadBlock"
 import SkillsCard from "../../components/skillsCard/SkillsCard"
 
 import { skillsList } from "../../helpers/skillsList"
+import './styles.css'
 
 const Home = () => {
 
