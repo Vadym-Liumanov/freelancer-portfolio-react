@@ -24,7 +24,7 @@ Header полностью адаптирован
 	 */
 	grid-template-columns: 240px 1fr auto;
 	grid-template-rows: 35px;
-	align-items: center;
+	align-items: baseline;
 	column-gap: 2em;
 }
 
@@ -139,62 +139,14 @@ Header полностью адаптирован
 }
 
 /* Burger menu */
-
-.burger {
+.header__burger-btn {
 	display: none;
-	position: relative;
-	width: 30px;
-	height: 18px;
-	cursor: pointer;
-}
-
-.burger span,
-.burger::before,
-.burger::after {
-	position: absolute;
-	left: 0;
-	height: 10%;
-	width: 100%;
-	transition: all 0.3s ease 0s;
-	background-color: var(--white);
-}
-
-.burger::before,
-.burger::after {
-	content: "";
-}
-
-.burger::before {
-	top: 0;
-}
-
-.burger::after {
-	bottom: 0;
-}
-
-.burger span {
-	top: 50%;
-	transform: scale(1) translate(0px, -50%);
-}
-
-.burger_active span {
-	transform: scale(0) translate(0px, -50%);
-}
-
-.burger_active::before {
-	top: 50%;
-	transform: rotate(-45deg) translate(0px, -50%);
-}
-
-.burger_active::after {
-	bottom: 50%;
-	transform: rotate(45deg) translate(0px, 50%);
 }
 
 @media (max-width: 674px) {
 
 	/* показываем бургер */
-	.burger {
+	.header__burger-btn {
 		display: block;
 	}
 

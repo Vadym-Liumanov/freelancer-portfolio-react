@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import './styles.css'
+
 // надо в props передать callback, по которому откроется модальное окно с меню
 const BurgerBtn = () => {
   const [burgerOn, setBurgerOn] = useState(false)
@@ -9,7 +11,7 @@ const BurgerBtn = () => {
     setBurgerOn((prevState) => prevState ? false : true)
   }
 
-  const burgerStyle = burgerOn ? 'burger_active' : 'burger'
+  const burgerStyle = burgerOn ? 'burger_active burger' : 'burger'
 
   return (
     <button onClick={onBurgerClick}>

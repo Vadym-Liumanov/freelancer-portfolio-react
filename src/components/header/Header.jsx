@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 import "./styles.css"
 
 import DarkModeBtn from "../darkModeBtn/DarkModeBtn"
-// import BurgerBtn from "../burgerBtn/BurgerBtn"
+import BurgerBtn from "../burgerBtn/BurgerBtn"
 
 const Header = (props) => {
   const activeLink = "nav__link nav__link_active"
@@ -27,9 +27,10 @@ const Header = (props) => {
 
           {/* Burger menu */}
           <div className="header__burger-btn">
-            <button className={burgerStyle} onClick={onBurgerClick}>
+            <BurgerBtn />
+            {/* <button className={burgerStyle} onClick={onBurgerClick}>
               <span></span>
-            </button>
+            </button> */}
           </div>
 
           {/* Logo */}
