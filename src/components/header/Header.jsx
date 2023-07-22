@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { NavLink } from "react-router-dom"
 
 import "./styles.css"
@@ -12,13 +12,6 @@ const Header = (props) => {
 
   const linkClassNameDefinition = ({ isActive }) => isActive ? activeLink : normalLink
 
-  const [isBurgerOpen, setIsBurgerOpen] = useState(false)
-  const burgerStyle = isBurgerOpen ? 'burger burger_active' : 'burger'
-
-  const onBurgerClick = () => {
-    setIsBurgerOpen((prev) => !prev)
-  }
-
   return (
     <header className="header">
       <div className="container">
@@ -28,9 +21,6 @@ const Header = (props) => {
           {/* Burger menu */}
           <div className="header__burger-btn">
             <BurgerBtn />
-            {/* <button className={burgerStyle} onClick={onBurgerClick}>
-              <span></span>
-            </button> */}
           </div>
 
           {/* Logo */}
