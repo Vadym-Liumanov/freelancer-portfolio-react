@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: flex-end;
   column-gap: 1.4em;
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
 }
@@ -40,6 +40,7 @@
 
 .nav__link_vertical {
   color: var(--nav-bg);
+  font-size: 1.1em;
 }
 
 .nav__link:hover {
