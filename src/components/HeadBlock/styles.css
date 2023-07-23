@@ -21,8 +21,8 @@
 
 @media (max-width: 575px) {
 	.head-block {
-		min-height: calc(80vh - 76px);
-		padding: 40px 20px;
+		min-height: calc(95vh - 76px);
+		padding: 20px 20px 50px;
 	}
 }
 
