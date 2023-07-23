@@ -1,0 +1,64 @@
+/* Nav menu */
+
+/* Определим стили для расположения элементов навигации: 
+1) в строку - для меню в хидере (добавка _horizontal)
+2) в колонку - для выпадающего меню в бургере (добавка _vertical)
+*/
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1em;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 1.4em;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav__list_horizontal {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav__list_vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.nav__link {
+  color: var(--nav-text);
+  transition: opacity 0.2s ease-in;
+}
+
+.nav__link_horizontal {
+  color: var(--nav-text);
+}
+
+.nav__link_vertical {
+  color: var(--nav-bg);
+}
+
+.nav__link:hover {
+  opacity: 0.8;
+}
+
+.nav__link_active {
+  position: relative;
+}
+
+.nav__link_active::before {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  top: 100%;
+
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--accent);
+}

@@ -79,44 +79,6 @@ Header полностью адаптирован
 	grid-row: 1;
 }
 
-.nav__list {
-	display: flex;
-	flex-wrap: wrap;
-	row-gap: 1em;
-	align-items: center;
-	justify-content: flex-end;
-	column-gap: 1.4em;
-	font-size: 18px;
-	font-weight: 500;
-	font-family: 'Poppins', sans-serif;
-}
-
-.nav__link {
-	color: var(--nav-text);
-	transition: opacity 0.2s ease-in;
-}
-
-.nav__link:hover {
-	opacity: 0.8;
-}
-
-.nav__link_active {
-	position: relative;
-}
-
-.nav__link_active::before {
-	content: '';
-
-	position: absolute;
-	left: 0;
-	top: 100%;
-
-	display: block;
-	height: 2px;
-	width: 100%;
-	background-color: var(--accent);
-}
-
 @media (max-width: 674px) {
 
 	/* прячем строчное меню */

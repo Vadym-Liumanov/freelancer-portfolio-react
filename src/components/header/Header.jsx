@@ -5,15 +5,9 @@ import "./styles.css"
 
 import DarkModeBtn from "../darkModeBtn/DarkModeBtn"
 import BurgerBtn from "../burgerBtn/BurgerBtn"
+import NavMenu from "../navMenu/NavMenu"
 
-const Header = (props) => {
-  // Определение класса (стиль) для линка меню. Navlink имеет св-во isActive (доступно внутри него),
-  // поэтому внутри Navlink через замыкание обращаемся к нему для определения активного линка - в зависимости
-  // от значения определяем класс (стиль)
-  const activeLink = "nav__link nav__link_active"
-  const normalLink = "nav__link"
-
-  const linkClassNameDefinition = ({ isActive }) => isActive ? activeLink : normalLink
+const Header = () => {
 
   return (
     <header className="header">
@@ -34,25 +28,9 @@ const Header = (props) => {
           </div>
 
           {/* Navbar */}
-          <nav className="header__nav nav">
-            <ul className="nav__list">
-              <li className="nav__item">
-                <NavLink to="/" className={linkClassNameDefinition}>
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav__item">
-                <NavLink to="/projects" className={linkClassNameDefinition}>
-                  Projects
-                </NavLink>
-              </li>
-              <li className="nav__item">
-                <NavLink to="/contacts" className={linkClassNameDefinition}>
-                  Contacts
-                </NavLink>
-              </li>
-            </ul>
-          </nav>
+          <div className="header__nav">
+            <NavMenu orientation="horizontal" />
+          </div>
 
           {/* Dark-mode button */}
           <div className="header__theme-btn">
