@@ -6,6 +6,7 @@ import GitHubBtn from "../../components/gitHubBtn/GitHubBtn"
 
 import "./styles.css"
 import { projectsList } from "../../helpers/projectsList"
+import PrimaryBtn from "../../components/primaryBtn/PrimaryBtn"
 
 const Project = () => {
   // Берем из параметров URL id запрашиваемого проекта
@@ -32,6 +33,9 @@ const Project = () => {
             <p>{currentProject['skills']}</p>
           </div>
           <GitHubBtn link={currentProject['gitHubLink']} />
+          <PrimaryBtn link="/projects" className="project__back-btn">
+            To Projects
+          </PrimaryBtn>
         </div>
       </div>
     </section>

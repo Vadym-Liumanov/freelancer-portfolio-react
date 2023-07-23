@@ -30,6 +30,10 @@
 	line-height: 1.3;
 }
 
+.project__back-btn {
+	margin-top: 1em;
+}
+
 @media (max-width: 767px) {
 	.project__description {
 		font-size: 1.6em;

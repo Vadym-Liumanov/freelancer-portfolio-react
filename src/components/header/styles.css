@@ -24,7 +24,7 @@ Header полностью адаптирован
 	 */
 	grid-template-columns: 240px 1fr auto;
 	grid-template-rows: 35px;
-	align-items: baseline;
+	align-items: center;
 	column-gap: 2em;
 }
 

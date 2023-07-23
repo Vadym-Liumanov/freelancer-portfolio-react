@@ -90,16 +90,17 @@
 /* Btn */
 /* Кнопка для скачивания CV - пока отключена в JSX */
 
+/* Primary button */
 .head-block__btn {
 	display: inline-block;
-	height: 48px;
-	padding: 12px 28px;
+	height: 3em;
+	padding: 0.7em 1.7em;
 
-	border-radius: 5px;
+	border-radius: 6px;
 	background-color: var(--accent);
 	color: var(--white);
-	letter-spacing: 0.15px;
-	font-size: 16px;
+	line-height: 1.6;
+	font-size: 1.1em;
 	font-weight: 500;
 
 	transition: opacity 0.2s ease-in;

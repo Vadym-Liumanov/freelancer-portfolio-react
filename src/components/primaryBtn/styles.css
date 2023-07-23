@@ -1,0 +1,24 @@
+/* Primary button */
+.primary-btn {
+	display: inline-block;
+	/* height: 3em; */
+	padding: 0.6em 1.7em;
+
+	border-radius: 6px;
+	background-color: var(--accent);
+	color: var(--white);
+	line-height: 1.6;
+	font-size: 1.1em;
+	font-weight: 500;
+
+	transition: opacity 0.3s ease-in;
+}
+
+.primary-btn:hover {
+	opacity: 0.9;
+}
+
+.primary-btn:active {
+	position: relative;
+	top: 1px;
+}
