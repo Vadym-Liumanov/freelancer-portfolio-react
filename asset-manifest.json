@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/freelancer-portfolio-react/static/css/main.7b9c93b9.css",
+    "main.css": "/freelancer-portfolio-react/static/css/main.35523068.css",
     "main.js": "/freelancer-portfolio-react/static/js/main.52f00bce.js",
     "static/media/08-big.jpg": "/freelancer-portfolio-react/static/media/08-big.36ceebabfa72a53496f4.jpg",
     "static/media/09-big.jpg": "/freelancer-portfolio-react/static/media/09-big.58befc1b0c280dbf63c7.jpg",
@@ -20,11 +20,11 @@
     "static/media/linkedIn.svg": "/freelancer-portfolio-react/static/media/linkedIn.55523f62797ddb51e960322dd47e5636.svg",
     "static/media/telegram.svg": "/freelancer-portfolio-react/static/media/telegram.655f483614311fac1b0e096f794e8112.svg",
     "index.html": "/freelancer-portfolio-react/index.html",
-    "main.7b9c93b9.css.map": "/freelancer-portfolio-react/static/css/main.7b9c93b9.css.map",
+    "main.35523068.css.map": "/freelancer-portfolio-react/static/css/main.35523068.css.map",
     "main.52f00bce.js.map": "/freelancer-portfolio-react/static/js/main.52f00bce.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b9c93b9.css",
+    "static/css/main.35523068.css",
     "static/js/main.52f00bce.js"
   ]
 }
