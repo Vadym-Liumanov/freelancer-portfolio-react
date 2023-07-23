@@ -7,6 +7,9 @@ import DarkModeBtn from "../darkModeBtn/DarkModeBtn"
 import BurgerBtn from "../burgerBtn/BurgerBtn"
 
 const Header = (props) => {
+  // Определение класса (стиль) для линка меню. Navlink имеет св-во isActive (доступно внутри него),
+  // поэтому внутри Navlink через замыкание обращаемся к нему для определения активного линка - в зависимости
+  // от значения определяем класс (стиль)
   const activeLink = "nav__link nav__link_active"
   const normalLink = "nav__link"
 
@@ -38,12 +41,12 @@ const Header = (props) => {
                   Home
                 </NavLink>
               </li>
-              <li className="nav-list__item">
+              <li className="nav__item">
                 <NavLink to="/projects" className={linkClassNameDefinition}>
                   Projects
                 </NavLink>
               </li>
-              <li className="nav-list__item">
+              <li className="nav__item">
                 <NavLink to="/contacts" className={linkClassNameDefinition}>
                   Contacts
                 </NavLink>
