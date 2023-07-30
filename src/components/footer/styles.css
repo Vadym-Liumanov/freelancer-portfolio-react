@@ -28,11 +28,32 @@
 }
 
 .social__item {
-	width: 40px;
+	width: 34px;
 }
 
-.social__icon {
-	width: 34px;
+@keyframes icon-shaking {
+	0% {
+		transform: rotate(0deg);
+	}
+	20% {
+		transform: rotate(20deg);
+	}
+	60% {
+		transform: rotate(-30deg);
+	}
+	90% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.social__item:hover {
+	animation-name: icon-shaking;
+	animation-duration: 0.8s;
+	animation-timing-function: ease-in-out;
+	user-select: none;
 }
 
 .copyright {

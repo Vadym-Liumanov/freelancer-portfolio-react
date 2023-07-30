@@ -37,7 +37,9 @@ const Modal = ({ active, onClose, children }) => {
           блокируем это событие на дочернем элементе через e.stopPropagation() */}
           <div className="modal__body" onClick={(e) => { e.stopPropagation() }}>
             <button className="modal__close-btn" onClick={onClose}>
-              <div className="modal__cross"></div>
+              <div className="modal__cross-wrapper">
+                <div className="modal__cross"></div>
+              </div>
             </button>
             <div className="modal__content">
               {children}

@@ -5,7 +5,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  
+
   padding-top: calc(76px + 5vh);
   padding-left: 5vw;
 
@@ -27,39 +27,49 @@
 
 .modal__close-btn {
   position: absolute;
-  top: 1em;
-  right: 1em;
+  top: 0.7em;
+  right: 0.7em;
 }
 
 /* Cross */
-.modal__cross {
-  display: block;
-	position: relative;
-	width: 20px;
-	height: 20px;
+.modal__cross-wrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   transition: opacity 0.3s ease;
 }
 
-.modal__cross:hover {
-  opacity: 0.8;
+.modal__cross-wrapper:hover {
+  background-color: #bbb;
+}
+
+.modal__cross {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+
 }
 
 .modal__cross::before,
 .modal__cross::after {
-	content: "";
+  content: "";
   height: 10%;
-	width: 100%;
-	background-color: var(--nav-bg);
+  width: 100%;
+  background-color: var(--nav-bg);
   position: absolute;
-	left: 0;
+  left: 0;
 }
 
 .modal__cross::before {
-	top: 50%;
-	transform: rotate(-45deg) translate(0px, -50%);
+  top: 50%;
+  transform: rotate(-45deg) translate(0px, -50%);
 }
 
 .modal__cross::after {
-	bottom: 50%;
-	transform: rotate(45deg) translate(0px, 50%);
+  bottom: 50%;
+  transform: rotate(45deg) translate(0px, 50%);
 }
