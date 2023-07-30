@@ -39,7 +39,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: opacity 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .modal__cross-wrapper:hover {
